@@ -17,15 +17,15 @@ const Calculator = () => (
       <button type="button" className="button sign">x</button>
     </div>
     <div className="row-button">
-      <button type="button" className="button">6</button>
-      <button type="button" className="button">5</button>
       <button type="button" className="button">4</button>
+      <button type="button" className="button">5</button>
+      <button type="button" className="button">6</button>
       <button type="button" className="button sign">-</button>
     </div>
     <div className="row-button">
-      <button type="button" className="button">3</button>
-      <button type="button" className="button">2</button>
       <button type="button" className="button">1</button>
+      <button type="button" className="button">2</button>
+      <button type="button" className="button">3</button>
       <button type="button" className="button sign">+</button>
     </div>
     <div className="row-button">
