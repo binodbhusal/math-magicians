@@ -1,0 +1,36 @@
+.calculator {
+  width: 360px;
+  margin: 10% auto;
+}
+
+.button {
+  width: 90px;
+  height: 55px;
+  border: 1px solid #d3d3d3;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.zero-button {
+  width: 180px;
+}
+
+.display {
+  background-color: #90a4ae;
+  width: 360px;
+  color: #fff;
+  margin: auto;
+  text-align: right;
+  padding: 1px 0;
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+.sign {
+  background-color: #ea9215;
+}
+
+.button:hover {
+  color: #90a4ae;
+}
