@@ -1,45 +1,63 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import calculate from '../logic/calculate';
 
-const Calculator = () => (
-
-  <div className="calculator">
-    <Display />
-    <div className="row-button">
-      <button type="button" className="button">AC</button>
-      <button type="button" className="button">+/-</button>
-      <button type="button" className="button">%</button>
-      <button type="button" className="button sign">&#247;</button>
+const Calculator = () => {
+  const [displayValue, setDisplayValue] = useState(0);
+  const [calcData, setCalcData] = useState({
+    total: 0,
+    next: null,
+    operation: null,
+  });
+  const handleButtonClick = (e) => {
+    const buttonName = e.target.name;
+    const newData = calculate(calcData, buttonName);
+    setCalcData(newData);
+    setDisplayValue(newData.next || newData.total || 0);
+  };
+  return (
+    <div className="calculator">
+      <Display value={displayValue} />
+      <div className="row-button">
+        <button type="button" className="button" name="AC" onClick={handleButtonClick}>AC</button>
+        <button type="button" className="button" name="+/-" onClick={handleButtonClick}>+/-</button>
+        <button type="button" className="button" name="%" onClick={handleButtonClick}>%</button>
+        <button type="button" className="button sign" name="&#247" onClick={handleButtonClick}>&#247;</button>
+      </div>
+      <div className="row-button">
+        <button type="button" className="button" name="7" onClick={handleButtonClick}>7</button>
+        <button type="button" className="button" name="8" onClick={handleButtonClick}>8</button>
+        <button type="button" className="button" name="9" onClick={handleButtonClick}>9</button>
+        <button type="button" className="button sign" name="x" onClick={handleButtonClick}>x</button>
+      </div>
+      <div className="row-button">
+        <button type="button" className="button" name="4" onClick={handleButtonClick}>4</button>
+        <button type="button" className="button" name="5" onClick={handleButtonClick}>5</button>
+        <button type="button" className="button" name="6" onClick={handleButtonClick}>6</button>
+        <button type="button" className="button sign" name="-" onClick={handleButtonClick}>-</button>
+      </div>
+      <div className="row-button">
+        <button type="button" className="button" name="1" onClick={handleButtonClick}>1</button>
+        <button type="button" className="button" name="2" onClick={handleButtonClick}>2</button>
+        <button type="button" className="button" name="3" onClick={handleButtonClick}>3</button>
+        <button type="button" className="button sign" name="+" onClick={handleButtonClick}>+</button>
+      </div>
+      <div className="row-button">
+        <button type="button" className="button zero-button" name="0" onClick={handleButtonClick}>0</button>
+        <button type="button" className="button" name="." onClick={handleButtonClick}>.</button>
+        <button type="button" className="button sign" name="=" onClick={handleButtonClick}>=</button>
+      </div>
     </div>
-    <div className="row-button">
-      <button type="button" className="button">7</button>
-      <button type="button" className="button">8</button>
-      <button type="button" className="button">9</button>
-      <button type="button" className="button sign">x</button>
-    </div>
-    <div className="row-button">
-      <button type="button" className="button">4</button>
-      <button type="button" className="button">5</button>
-      <button type="button" className="button">6</button>
-      <button type="button" className="button sign">-</button>
-    </div>
-    <div className="row-button">
-      <button type="button" className="button">1</button>
-      <button type="button" className="button">2</button>
-      <button type="button" className="button">3</button>
-      <button type="button" className="button sign">+</button>
-    </div>
-    <div className="row-button">
-      <button type="button" className="button zero-button">0</button>
-      <button type="button" className="button">.</button>
-      <button type="button" className="button sign">=</button>
-    </div>
-  </div>
-);
-const Display = () => (
+  );
+};
+const Display = ({ value }) => (
   <div className="display">
-    <p>0</p>
+    <p>{value}</p>
   </div>
 );
+
+Display.propTypes = {
+  value: PropTypes.string.isRequired,
+};
 
 export default Calculator;
