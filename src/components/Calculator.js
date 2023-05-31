@@ -1,4 +1,5 @@
 import React from 'react';
+import calculate from '../logic/calculate';
 
 const Calculator = () => (
 
