@@ -34,3 +34,9 @@
 .button:hover {
   color: #90a4ae;
 }
+
+.qoute-container {
+  width: 70%;
+  text-align: center;
+  margin: -100px auto 0 auto;
+}
