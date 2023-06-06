@@ -1,6 +1,14 @@
+body {
+  background: linear-gradient(90deg, rgba(234,146,21,1) 40%, rgba(255,255,255,1) 100%);
+
+}
+
 .calculator {
   width: 360px;
-  margin: 10% auto;
+  margin: -5% 48%;
+  border: 1px solid #fff;
+  padding: 40px 100px;
+  border-radius: 12px;
 }
 
 .button {
@@ -37,6 +45,24 @@
 
 .qoute-container {
   width: 70%;
-  text-align: center;
-  margin: -100px auto 0 auto;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.home-container {
+  max-width: 100%;
+  width: 80%;
+  padding: 40px 20px;
+  padding-inline: 20px 40px;
+  margin: auto;
+  border-radius:80px 0 60px 0;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+h3 {
+  margin: 5% 15%;
 }
