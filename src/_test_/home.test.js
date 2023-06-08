@@ -1,8 +1,9 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect';
 import Home from '../components/Home';
 
 test('Expect homepage to match working snapshot', () => {
-  const homepage = renderer.create(<Home />).toJSON();
-  expect(homepage).toMatchSnapshot();
+  const { asFragment } = render(<Home />);
+  expect(asFragment()).toMatchSnapshot();
 });
