@@ -1,16 +1,84 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Expect homepage to match working snapshot 1`] = `
-<DocumentFragment>
-  <div
-    class="home-container"
-  >
-    <h2>
-       WelCome to Our Page
-    </h2>
-    <p>
-      We are here to unlock the world of arithmetic for you and provide a dose of math-inspired inspiration. How cool is that? 😉 Brace yourself for some magical math moments as we dive into the realm of numbers and equations. Let’s ignite the spark of curiosity and embark on an extraordinary journey of mathematical wonders!✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨.
-    </p>
-  </div>
-</DocumentFragment>
+exports[`Tests Home component  renders correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="home-container"
+      >
+        <h2>
+           WelCome to Our Page
+        </h2>
+        <p>
+          We are here to unlock the world of arithmetic for you and provide a dose of math-inspired inspiration. How cool is that? 😉 Brace yourself for some magical math moments as we dive into the realm of numbers and equations. Let’s ignite the spark of curiosity and embark on an extraordinary journey of mathematical wonders!✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨.
+        </p>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="home-container"
+    >
+      <h2>
+         WelCome to Our Page
+      </h2>
+      <p>
+        We are here to unlock the world of arithmetic for you and provide a dose of math-inspired inspiration. How cool is that? 😉 Brace yourself for some magical math moments as we dive into the realm of numbers and equations. Let’s ignite the spark of curiosity and embark on an extraordinary journey of mathematical wonders!✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨.
+      </p>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
 `;

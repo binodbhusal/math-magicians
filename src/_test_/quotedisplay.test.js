@@ -1,8 +1,14 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import QuoteDisplay from '../components/QuoteDisplay';
 
-test('renders quote display correctly', () => {
-  const loadingElement = renderer.create(<QuoteDisplay />).toJSON();
-  expect(loadingElement).toMatchSnapshot();
+describe('Tests Quote component ', () => {
+  it('renders correctly', () => {
+    const tree = render(<QuoteDisplay />);
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('renders without crashing', () => {
+    render(<QuoteDisplay />);
+  });
 });
