@@ -19,7 +19,7 @@ const Calculator = () => {
     <>
       <h3>Lets Do Some Math !</h3>
       <div className="calculator">
-        <Display value={displayValue} />
+        <Display value={String(displayValue)} />
         <div className="row-button">
           <button type="button" className="button" name="AC" onClick={handleButtonClick}>AC</button>
           <button type="button" className="button" name="+/-" onClick={handleButtonClick}>+/-</button>
