@@ -25,6 +25,4 @@ describe('Tests Home component ', () => {
     const textElement = screen.getByText(/We are here to unlock the world of arithmetic for you and provide a dose of math-inspired inspiration/i);
     expect(textElement).toBeInTheDocument();
   });
-
-  
-  });
+});
