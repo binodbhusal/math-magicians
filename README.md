@@ -59,8 +59,7 @@
 - Clearing and Resetting: Users have the option to clear the input or reset the entire calculation history with a single click.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> Comming soon
+- [Link to Live Demo ](https://math-magician-2l9g.onrender.com/)
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
