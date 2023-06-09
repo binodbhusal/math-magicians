@@ -108,7 +108,6 @@ To run the project, execute the following command:
 - GitHub: [@githubhandle](https://github.com/binodbhusal)
 - Twitter: [@twitterhandle](https://twitter.com/Binod_ironLad)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/binodbhusal)
-- 👤 [TVMAZE](https://www.tvmaze.com/)
 
 ## 🔭 Future Features <a name="future-features"></a>
 
