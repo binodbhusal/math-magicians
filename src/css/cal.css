@@ -1,22 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,400;0,700;0,900;1,400&family=Lobster&family=Oswald&family=Poppins:wght@300;400;500;600;700&family=Righteous&display=swap');
+
 body {
   background: linear-gradient(90deg, rgba(234, 146, 21, 1) 40%, rgba(255, 255, 255, 1) 100%);
 }
 
 .calculator {
   width: 360px;
-  margin: -5% 48%;
+  height: 50vh;
+  margin: -15% 48%;
   border: 1px solid #fff;
-  padding: 40px 100px;
+  padding: 40px 40px;
   border-radius: 12px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: 0.4s ease-in;
+}
+
+.calculator:hover {
+  transform: scale(1.01);
 }
 
 .button {
   width: 90px;
   height: 55px;
-  border: 1px solid #d3d3d3;
   padding: 10px;
   cursor: pointer;
   font-weight: bold;
+  background-color: #555;
+  color: #fff;
+  border: 0.5px solid #90a4ae;
+  font-size: 1.3em;
 }
 
 .zero-button {
@@ -24,14 +37,17 @@ body {
 }
 
 .display {
-  background-color: #90a4ae;
+  background-color: #333;
   width: 360px;
   color: #fff;
-  margin: auto;
   text-align: right;
-  padding: 1px 0;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: bolder;
+  border-radius: 10px 10px 0 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .sign {
@@ -50,9 +66,9 @@ body {
 
 .home-container {
   max-width: 100%;
-  width: 80%;
+  width: 70%;
   padding: 40px 20px;
-  padding-inline: 20px 40px;
+  padding-inline: 100px 100px;
   margin: auto;
   border-radius: 80px 0 60px 0;
   background-color: #333;
@@ -60,8 +76,14 @@ body {
   font-size: 1.2em;
   line-height: 1.4;
   text-align: justify;
+  height: 65vh;
+  margin-top: 3%;
+  font-family: 'Lato', sans-serif;
 }
 
 h3 {
-  margin: 5% 15%;
+  margin: 8% 15%;
+  font-size: 2em;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
 }

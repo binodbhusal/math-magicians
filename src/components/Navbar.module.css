@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,400;0,700;0,900;1,400&family=Lobster&family=Oswald&family=Poppins:wght@300;400;500;600;700&family=Righteous&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 .navul {
   list-style: none;
   display: flex;
@@ -9,9 +15,10 @@
   font-size: 1em;
   cursor: pointer;
   color: #fff;
-  margin: -0.4% 2%;
-  font-family: 'Lato', sans-serif;
+  margin: -0.8% 2%;
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
+  font-weight: 600;
 }
 
 nav {
@@ -24,9 +31,26 @@ nav {
 }
 
 h1 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Righteous', sans-serif;
   font-weight: 700;
   margin-top: 2em;
-  margin-left: 10px;
-  color: #fff;
+  margin-left: 3%;
+  color: #116d6e;
+}
+
+nav img {
+  margin-bottom: -30px;
+  margin-top: -3%;
+  margin-left: 3%;
+  align-self: center;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+nav img:hover {
+  transform: scale(1.12);
+}
+
+.navlink:hover {
+  color: #dde6ed;
 }
